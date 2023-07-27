@@ -1,0 +1,63 @@
+name: CCD
+type: profile
+description: 'Skilld Drupal installation profile'
+core_version_requirement: ^10
+
+dependencies:
+  - block
+  - block_content
+  - breakpoint
+  - component_connector
+  - components
+  - config
+  - ctools
+  - dblog
+  - editor
+  - entity_reference_revisions
+  - field
+  - field_formatter
+  - field_layout
+  - field_ui
+  - file
+  - filter
+  - image
+  - language
+  - layout_discovery
+  - link
+  - locale
+  - menu_link_content
+  - menu_ui
+  - node
+  - page_manager
+  - page_manager_ui
+  - panels
+  - path
+  - path_alias
+  - redirect
+  - redirect_404
+  - sqlite
+  - system
+  - taxonomy
+  - text
+  - token
+  - toolbar
+  - ui_patterns
+  - ui_patterns_field_formatters
+  - ui_patterns_layouts
+  - ui_patterns_library
+  - ui_patterns_views
+  - update
+  - user
+  - views_ui
+  - webform
+  - webform_ui
+  - pathauto
+  - content_translation
+  - views
+  - paragraphs
+  - minimal
+
+themes:
+  - stark
+  - claro
+
