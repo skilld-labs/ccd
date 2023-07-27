@@ -1,0 +1,68 @@
+{
+    "name": "skilldlabs/ccd",
+    "description": "Drupal distribution",
+    "type": "drupal-profile",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexey Gaydabura",
+            "email": "gaydabura@gmail.com"
+        },
+        {
+            "name": "Skilld",
+            "role": "Maintainer",
+            "homepage": "https://www.drupal.org/skilld"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    ],
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true,
+        "preferred-install": {
+            "*": "dist"
+        },
+        "allow-plugins": {
+            "composer/installers": true,
+            "cweagans/composer-patches": true
+        }
+    },
+    "require": {
+        "composer/installers": "^2.2",
+        "cweagans/composer-patches": "^1.7"
+    },
+    "extra": {
+        "installer-paths": {
+            "web/core": [
+                "type:drupal-core"
+            ],
+            "web/libraries/{$name}": [
+                "type:drupal-library"
+            ],
+            "web/modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "web/profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "web/themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "drush/Commands/contrib/{$name}": [
+                "type:drupal-drush"
+            ]
+        },
+        "composer-exit-on-patch-failure": true,
+        "patchLevel": {
+            "drupal/core": "-p2"
+        }
+    }
+}
