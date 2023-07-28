@@ -55,7 +55,6 @@ dependencies:
   - content_translation
   - views
   - paragraphs
-  - minimal
 
 themes:
   - stark
