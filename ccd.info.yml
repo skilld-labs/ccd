@@ -25,6 +25,8 @@ dependencies:
   - layout_discovery
   - link
   - locale
+  - media
+  - media_library
   - menu_link_content
   - menu_ui
   - node
